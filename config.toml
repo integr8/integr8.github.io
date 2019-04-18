@@ -1,0 +1,34 @@
+baseurl = "https://integr8.me"
+languageCode = "pt-br"
+title = "Integr8"
+theme = "integr8"
+paginate = 10
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+PygmentsUseClasses = false
+
+[Permalinks]
+    artigo = "artigo/:slug"
+
+[Taxonomies]
+    tag = "tags"
+    categories = "categories"
+    projetos = "projetos"
+
+[Params]
+    languagecode = "pt-BR"
+    author = "Integr8"
+
+[[menu.main]]
+    name = "Atualizações"
+    url = "/"
+    weight = 1
+
+# [[menu.main]]
+#     name = "Projetos"
+#     url = "/projeto"
+#     weight = 2
+
+[params.strings]
+    date_format = '02-01-2006'

@@ -1,0 +1,24 @@
+language: go
+sudo: required
+git:
+  submodules: true
+addons:
+  apt:
+    packages:
+      - python-pygments
+install:
+  - go get -v github.com/spf13/hugo
+script:
+  - hugo
+  - if [ ! -z "$CUSTOM_DOMAIN" ]; then echo $CUSTOM_DOMAIN > public/CNAME; fi
+notifications:
+  email:
+    on_failure: always
+deploy:
+  provider: pages
+  target-branch: master
+  skip_cleanup: true
+  local_dir: public/
+  github_token: $GH_TOKEN
+  on:
+    branch: development
