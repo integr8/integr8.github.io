@@ -21,7 +21,7 @@ PygmentsUseClasses = false
     author = "Integr8"
 
 [[menu.main]]
-    name = "Atualizações"
+    name = "Blog"
     url = "/"
     weight = 1
 

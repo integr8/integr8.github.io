@@ -5,5 +5,4 @@ author = "Integr8"
 menu = "main"
 +++
 
-## Sobre
-
+Integr8 é um projeto open source, feito por [pessoas](https://github.com/orgs/integr8/people) que adoram tecnologia.
