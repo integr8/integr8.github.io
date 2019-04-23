@@ -8,6 +8,8 @@ PygmentsCodeFences = true
 PygmentsStyle = "monokai"
 PygmentsUseClasses = false
 
+googleAnalytics = "UA-137210080-1"
+
 [Permalinks]
     artigo = "artigo/:slug"
 
