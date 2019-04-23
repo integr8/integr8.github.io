@@ -25,10 +25,13 @@ PygmentsUseClasses = false
     url = "/"
     weight = 1
 
-# [[menu.main]]
-#     name = "Projetos"
-#     url = "/projeto"
-#     weight = 2
-
 [params.strings]
     date_format = '02-01-2006'
+
+[blackfriday]
+  angledQuotes = true
+  extensions = ["hardLineBreak"]
+  fractions = false
+  plainIDAnchors = true
+  headerIds = true
+  hrefTargetBlank = true
