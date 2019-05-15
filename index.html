@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+  <meta charset="utf-8">
+  <title>Integr8 - Integr8</title>
+  <meta name="description" content="">
+  <meta name="author" content="Integr8">
+  <meta name="generator" content="" />
+  <meta name="robots" content="index,follow">
+  
+  <meta property="og:title" content="Integr8" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://integr8.me/" />
+
+<meta property="og:updated_time" content="2019-04-19T00:00:00&#43;00:00"/>
+
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" href="https://integr8.me/css/normalize.css">
+  <link rel="stylesheet" href="https://integr8.me/css/skeleton.css">
+  <link rel="stylesheet" href="https://integr8.me/css/custom.css">
+  <link rel="stylesheet" href="https://integr8.me/css/pygments.css">
+  <link rel="stylesheet" href="https://integr8.me/css/font-awesome.min.css">
+
+  
+  <link rel="icon" type="image/png" href="https://integr8.me/images/favicon.ico">
+  
+</head>
+
+<div class="container">
+    <div id="header">
+        <div class="row">
+            <div id="brand" class="three columns">
+                <a href="/"><img src="https://integr8.me/images/logo.png" alt="Integr8 Logo" /></a>
+            </div>
+            <div class="nine columns">
+                <nav>
+                    <ul id="navbar">
+                        
+                        
+                        <li class="current" >
+                            <a href="/">Blog</a></li>
+                        
+                        <li >
+                            <a href="/pagina/sobre/">Sobre</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="post-list">
+        
+        
+            <article class="post u-cf">
+    <div class="row">
+        <div class="twelve columns">
+            <h1 class="post-title"><a href="https://integr8.me/artigo/o-projeto/">O projeto</a></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="post-meta-info">
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                
+                    19/04/2019
+                
+                <span class="post-meta-info-taxonomy">
+                    | <i class="fa fa-folder-o" aria-hidden="true"></i>
+                        <a href="/categories/integr8">integr8</a>
+                    | <i class="fa fa-tag" aria-hidden="true"></i>
+                        
+<a href="/tags/devops">devops</a>, 
+<a href="/tags/devsecops">devsecops</a>, 
+<a href="/tags/gitops">gitops</a>, 
+<a href="/tags/chatops">chatops</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="post-content row">
+        <div class="twelve columns">
+            
+
+<p>Construir software é relativamente <em>fácil</em>, se pensarmos friamente no processo. A complexidade na construção da solução está diretamente relacionado a qualidade esperada. Garantir a qualidade das soluções desenvolvidas, seja em sua proposta, ou adoção da utilização de ferramentas custará tempo, e consequentemente, dinheiro. Trabalhando em grandes fábricas de software ou em pequenas empresas, a garantia da qualidade dos softwares desenvolvidos, ao menos em algum momento, <strong>deve</strong> ser a preocupação de todos os envolvidos.</p>
+
+<p>Há diversas soluções proprietárias para garantia da qualidade dos produtos desenvolvidos, e geralmente o valor não é baixo. O desconhecimento, e até mesmo a falta de divulgação das opções opensource norteia a incerteza e insegurança em sua implantação.</p>
+
+<p>Assim, este projeto foca-se em criar uma esteira de integração contínua, focando em filofias como <em>DevOps</em>, <em>DevSecOps</em>, <em>GitOps</em> e <em>ChatOps</em>. Como primeiro objetivo, nortearemos a construção automatizada dos elementos que comporão esta esteira, utilizando Ansible para implantação das ferramentas em um cluster Docker Swarm.</p>
+
+<p>As soluções aqui propostas podem ser feitas tanto in loco, quanto em núvem. Para as soluções em núvem, utilizaremos o terraform.</p>
+
+<p><a href="/images/post/projeto-integr8/arquitetura-devops.svg"><img src="/images/post/projeto-integr8/arquitetura-devops.svg" alt="Arquitetura DevOps" title="Arquitetura DevOps" /></a></p>
+
+<h2 id="o-estado-do-projeto-e-os-objetivos">O estado do projeto e os objetivos</h2>
+
+<p>Atualmente, temos trabalhado para automatizar a implantação destes elementos, como dito anteriormente, porém, há muito o que se fazer.</p>
+
+<h3 id="ansible-roles">Ansible Roles</h3>
+
+<ul>
+<li><a href="https://github.com/integr8/ansible-playbooks" target="_blank">ansible-playbooks</a> - Playbooks utilizados na construção da arquitetura que estamos propondo. Há uma <a href="https://integr8.me/ansible-playbooks/" target="_blank">documentação</a> inicial para montagem do ambiente necessário;<br /></li>
+<li><a href="https://github.com/integr8/ansible-role-docker-swarm" target="_blank">ansible-role-docker-swarm</a> - Role para instalação e criação de um swarm preparado para receber os elementos que comporão nossa esteira;<br /></li>
+<li><a href="https://github.com/integr8/ansible-role-traefik" target="_blank">ansible-role-traefik</a> - Role para implantação do proxy reverso em um cluster Docker Swarm;<br /></li>
+<li><a href="https://github.com/integr8/ansible-role-portainer" target="_blank">ansible-role-portainer</a> - Role para implantação do Portainer em um cluster Docker Swarm;<br /></li>
+<li><a href="https://github.com/integr8/ansible-role-selenium-hub" target="_blank">ansible-role-selenium-hub</a> - Role para implantação do Selenium HUB com nós Firefox e Google Chrome;<br />
+<br /></li>
+</ul>
+
+<h3 id="docker-images">Docker Images</h3>
+
+<ul>
+<li><a href="https://github.com/integr8/alpine-liquibase-helper" target="_blank">alpine-liquibase-helper</a> - Container que funciona como um wrapper para as funcionalidades do <a href="https://www.liquibase.org" target="_blank">Liquibase</a>. Deixamos a atenção para a captura do estado atual do banco de dados e transformação para ChangeSets. Há uma <a href="https://integr8.me/alpine-liquibase-helper/" target="_blank">documentação</a> extensa para todas as opções que o container oferece;<br /></li>
+<li><a href="https://github.com/integr8/alpine-gitflow-helper" target="_blank">alpine-gitflow-helper</a> - Container que executa todas as funcionalidades da implementação do <a href="https://br.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow" target="_blank">Gitflow</a> chamada <a href="https://github.com/petervanderdoes/gitflow-avh" target="_blank">AVH</a>. Além das funcionalidades padrão da implementação, adicionamos a possibilidade do gerenciamento de versões em projetos PHP(composer), Maven(pom) e Node.js(npm) e a geração de release notes a partir dos commits entre as releases. Há uma <a href="https://integr8.me/alpine-liquibase-helper/" target="_blank">documentação</a> extensa para todas as opções que o container oferece;<br /></li>
+<li><a href="https://github.com/integr8/alpine-asciidoctor-helper" target="_blank">alpine-asciidoctor-helper</a> - Container que transforma <code>asciidoc</code> para HTML e PDF. Todas as documentações dos containers, ansibles roles e terraform script utilizam esta tecnologia. Há uma <a href="https://integr8.me/alpine-asciidoctor-helper/" target="_blank">documentação</a> extensa para todas as opções que o container oferece;<br /></li>
+<li><a href="https://github.com/integr8/alpine-sonarqube-scanner" target="_blank">alpine-sonarqube-scanner</a> - Container para execução do SonarQube Scanner em um projeto;<br /></li>
+<li><a href="https://github.com/integr8/alpine-tesseract-ocr-helper" target="_blank">alpine-tesseract-ocr-helper</a> - Container que recebe uma imagem e retorna seu texto(executa OCR).<br />
+<br /></li>
+</ul>
+
+<h3 id="terraform-scripts">Terraform Scripts</h3>
+
+<ul>
+<li><a href="https://github.com/integr8/terraform-aws-devops-vpc" target="_blank">terraform-aws-devops-vpc</a> - Script Ansible para implantação de uma nova rede(VPC) para implantação dos elementos necessários;<br /></li>
+<li><a href="https://github.com/integr8/terraform-aws-devops-nexus" target="_blank">terraform-aws-devops-nexus</a> - Script Ansible para implantação do Sonatype Nexus utilizando ECS;<br /></li>
+<li><a href="https://github.com/integr8/terraform-aws-devops-selenium" target="_blank">terraform-aws-devops-selenium</a> - Script Ansible para implantação do do Selenium HUB.<br /></li>
+</ul>
+
+        </div>
+    </div>
+</article>
+
+        
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+        
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" id="copyright">&copy; 2019 ~ Integr8</div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137210080-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+</body>
+</html>

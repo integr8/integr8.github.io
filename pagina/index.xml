@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paginas on Integr8</title>
+    <link>https://integr8.me/pagina/</link>
+    <description>Recent content in Paginas on Integr8</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Thu, 18 Apr 2019 02:13:50 +0000</lastBuildDate>
+    
+	<atom:link href="https://integr8.me/pagina/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sobre</title>
+      <link>https://integr8.me/pagina/sobre/</link>
+      <pubDate>Thu, 18 Apr 2019 02:13:50 +0000</pubDate>
+      
+      <guid>https://integr8.me/pagina/sobre/</guid>
+      <description>Integr8 é um projeto open source, feito por pessoas que adoram tecnologia.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitops on Integr8</title>
+    <link>https://integr8.me/tags/gitops/</link>
+    <description>Recent content in gitops on Integr8</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://integr8.me/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O projeto</title>
+      <link>https://integr8.me/artigo/o-projeto/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://integr8.me/artigo/o-projeto/</guid>
+      <description>Construir software é relativamente fácil, se pensarmos friamente no processo. A complexidade na construção da solução está diretamente relacionado a qualidade esperada. Garantir a qualidade das soluções desenvolvidas, seja em sua proposta, ou adoção da utilização de ferramentas custará tempo, e consequentemente, dinheiro. Trabalhando em grandes fábricas de software ou em pequenas empresas, a garantia da qualidade dos softwares desenvolvidos, ao menos em algum momento, deve ser a preocupação de todos os envolvidos.</description>
+    </item>
+    
+  </channel>
+</rss>
